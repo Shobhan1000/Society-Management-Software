@@ -1,0 +1,38 @@
+# ----------------------
+# Node / Frontend
+# ----------------------
+frontend/node_modules/
+frontend/.pnp*
+frontend/.pnp.js
+frontend/coverage/
+frontend/build/
+frontend/.env*
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Environment files
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# macOS
+frontend/.DS_Store
+
+# ----------------------
+# Python / Backend
+# ----------------------
+backend/venv/
+
+# Byte-compiled / cache
+**/__pycache__/
+**/*.py[cod]
+
+# Logs
+*.log
+
+backend/database.py
+backend/test_data.py
