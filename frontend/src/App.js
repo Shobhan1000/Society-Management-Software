@@ -3,11 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
-import Inventory from "./scenes/inventory";
-import Suppliers from "./scenes/suppliers";
-import Transactions from "./scenes/transactions";
-import Forecast from "./scenes/forecast";
-import Alerts from "./scenes/alerts";
+import Members from "./scenes/members";
+import Committee from "./scenes/committee";
+import PlannedEvents from "./scenes/plannedEvents";
+import Finance from "./scenes/finance";
+import PastEvents from "./scenes/pastEvents";
+import Forms from "./scenes/forms";
+import Communication from "./scenes/communication";
 import Analytics from "./scenes/analytics";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
@@ -27,13 +29,23 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/inventory" element={<Inventory />} />
-              <Route path="/suppliers" element={<Suppliers />} />
-              <Route path="/transactions" element={<Transactions />} />
-              <Route path="/forecast" element={<Forecast />} />
-              <Route path="/alerts" element={<Alerts />} />
+
+              {/* People section */}
+              <Route path="/people">
+                <Route path="members" element={<Members />} />
+                <Route path="committee" element={<Committee />} />
+              </Route>
+
+              <Route path="/events">
+                <Route path="plannedEvents" element={<PlannedEvents />} />
+                <Route path="forms" element={<Forms />} />
+                <Route path="calendar" element={<Calendar />} />
+                <Route path="pastEvents" element={<PastEvents />} />
+              </Route>
+
+              <Route path="/finance" element={<Finance />} />
+              <Route path="/communication" element={<Communication />} />
               <Route path="/analytics" element={<Analytics />} />
-              <Route path="/calendar" element={<Calendar />} />
             </Routes>
           </main>
         </div>

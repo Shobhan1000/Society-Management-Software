@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-const Forecast = () => {
+const Communication = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
   const [forecastResult, setForecastResult] = useState(null);
   const [items, setItems] = useState([]);
@@ -443,4 +443,4 @@ const initialValues = {
   useHistoricalData: true,
 };
 
-export default Forecast;
+export default Communication;

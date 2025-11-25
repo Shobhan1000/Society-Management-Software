@@ -20,7 +20,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 
-const Transactions = () => {
+const Finance = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -584,4 +584,4 @@ const Transactions = () => {
   );
 };
 
-export default Transactions;
+export default Finance;

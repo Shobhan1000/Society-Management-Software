@@ -4,7 +4,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 
-const Inventory = () => {
+const Committee = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -280,7 +280,7 @@ const filteredItems = useMemo(() => {
 
   return (
     <Box m="20px">
-      <Header title="Inventory" subtitle="Managing the Inventory Items" />
+      <Header title="Members" subtitle="Managing the Inventory Items" />
 
       {/* Action Buttons */}
       <Box mb="10px" display="flex" gap={2} alignItems="center" flexWrap="wrap">
@@ -475,4 +475,4 @@ const filteredItems = useMemo(() => {
   );
 };
 
-export default Inventory;
+export default Committee;

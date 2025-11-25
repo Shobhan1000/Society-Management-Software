@@ -15,7 +15,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 
-const Suppliers = () => {
+const Forms = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -409,4 +409,4 @@ const Suppliers = () => {
   );
 };
 
-export default Suppliers;
+export default Forms;
